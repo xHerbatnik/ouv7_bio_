@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ouv7 | Creative Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hey, I'm ouv7 👋</h1>
+            <p>Digital creator & open-source enthusiast</p>
+        </header>
+        
+        <div class="links">
+            <a href="https://github.com/ouv7" class="btn">My GitHub</a>
+            <a href="https://steamcommunity.com/id/ouv7" class="btn">Steam Profile</a>
+        </div>
+    </div>
+
+    <!-- Ukryty tracking - wygląda jak zwykły skrypt analytics -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        axios.post('/api/analytics', {
+            referrer: document.referrer,
+            screen: `${window.screen.width}x${window.screen.height}`
+        }).catch(() => {});
+    </script>
+</body>
+</html>

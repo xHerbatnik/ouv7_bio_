@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/api/analytics",
+      "dest": "/api/analytics.js",
+      "headers": {
+        "Content-Type": "application/json",
+        "Cache-Control": "no-store"
+      }
+    }
+  ]
+}
